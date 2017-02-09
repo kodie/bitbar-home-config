@@ -14,7 +14,7 @@ cfg[home_config,color]="red"
 cfg[home_config,text]="Try editing $HOME/.bitbarrc"
 
 cfgFile="$HOME/.bitbarrc"
-if [ ! -e "$cfgFile" ]; then touch $cfgFile; fi
+if [ ! -e "$cfgFile" ]; then touch "$cfgFile"; fi
 while read -r cfgLine; do
   if [[ -z $cfgLine ]]; then continue; fi
   if [[ ${cfgLine:0:1} == '[' ]]; then cfgKey=${cfgLine:1:-1};
