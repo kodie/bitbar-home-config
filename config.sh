@@ -5,7 +5,7 @@
 # <bitbar.version>v1.0</bitbar.version>
 # <bitbar.author>Kodie Grantham</bitbar.author>
 # <bitbar.author.github>kodie</bitbar.author.github>
-# <bitbar.desc>Example of how to mimic the functionality of the home-config npm module in bash</bitbar.desc>
+# <bitbar.desc>Example of how to mimic the functionality of the home-config npm module in a bash BitBar plugin</bitbar.desc>
 # <bitbar.dependencies>bash4</bitbar.dependencies>
 # <bitbar.abouturl>https://github.com/kodie/bitbar-home-config</bitbar.abouturl>
 
