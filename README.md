@@ -1,5 +1,4 @@
-# Home Config BitBar Example
-
+# Home Config BitBar Example [![Build Status](https://travis-ci.org/kodie/bitbar-home-config.svg?branch=master)](https://travis-ci.org/kodie/bitbar-home-config)
 This is a small example of how to mimic the functionality of the [home-config npm module](https://www.npmjs.com/package/home-config) in bash.
 
 ## Requirements
