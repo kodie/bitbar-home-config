@@ -1,4 +1,5 @@
 #!/usr/local/bin/bash
+# shellcheck disable=SC2154
 
 # <bitbar.title>Home Config</bitbar.title>
 # <bitbar.version>v1.0</bitbar.version>
@@ -13,12 +14,12 @@ cfg[home_config,color]="red"
 cfg[home_config,text]="Try editing $HOME/.bitbarrc"
 
 cfgFile="$HOME/.bitbarrc"
-if [ ! -e $cfgFile ]; then touch $cfgFile; fi
-while read cfgLine; do
+if [ ! -e "$cfgFile" ]; then touch $cfgFile; fi
+while read -r cfgLine; do
   if [[ -z $cfgLine ]]; then continue; fi
   if [[ ${cfgLine:0:1} == '[' ]]; then cfgKey=${cfgLine:1:-1};
   else IFS='='; cfgVar=($cfgLine); unset IFS; cfg[$cfgKey,${cfgVar[0]}]=${cfgVar[1]}; fi
-done < $cfgFile
+done < "$cfgFile"
 
 echo "Config Example | dropdown=false color=${cfg[home_config,color]}"
 echo "---"
